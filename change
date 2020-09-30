@@ -1,3 +1,6 @@
 修改通过主界面的按钮来控制表格的重新绘制，直接在菜单栏的设置对话框中设置并点击确认后完成，
 添加CGridCtrlButton类，能通过右键菜单栏的插入选项在单元格中插入按钮
 20200928
+在GridCtrl.cpp中修改函数MouseOverColumnResizeArea（）和MouseOverRowResizeArea（）
+将光标可选择范围删除（if (point.y >= GetFixedRowHeight())return FALSE;），即可实现拖动非固定行列来改变单元格大小
+20200930
