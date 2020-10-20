@@ -4,3 +4,6 @@
 在GridCtrl.cpp中修改函数MouseOverColumnResizeArea（）和MouseOverRowResizeArea（）
 将光标可选择范围删除（if (point.y >= GetFixedRowHeight())return FALSE;），即可实现拖动非固定行列来改变单元格大小
 20200930
+在MFC程序中使用BCG组件时，需要在stdafx中添加#include "BCGCBProInc.h"
+在ExitInstance函数中添加CleanState和BCGCBProCleanUp函数，防止BCG资源内存泄漏；
+20201020
